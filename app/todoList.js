@@ -3,10 +3,6 @@ import Todo from './todo'
 
 const getTodos = async () => {
     let todos = await fetch('http://localhost:3000/api/todo/list');
-    // let todos = [
-    //     {id:1,name:"tariq"},
-    //     {id:2, name: "danish"}
-    // ]
     return todos.json()
 }
 
@@ -15,10 +11,11 @@ const TodoList = async () => {
   return (
     <div>
         <ul style={{ listStyleType: "none" , padding: 0}}>
-            {todos.map((t)=> 
+            {todos.map((t)=> (
                  <li key={t.id} style={{padding: "5px 0"}}>                 
                     <Todo todo = {t} />
-                </li>                                   
+                </li>         
+            )                          
             )}
         </ul>
    </div>
