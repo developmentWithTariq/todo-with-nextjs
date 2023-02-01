@@ -24,6 +24,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/addNewTodo.jsx", "app/todo.jsx", "app/todoList.jsx", "app/todoList.js"],
   "exclude": ["node_modules"]
 }

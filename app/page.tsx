@@ -5,12 +5,13 @@ import AddNewTodo from './addNewTodo'
 import TodoList from './todoList'
 
 const inter = Inter({ subsets: ['latin'] })
-
+// NextComponentType<NextPageContext, {}, Props> = (props: Props)
 export default function Home() {
   return (
     
       <div>
       <AddNewTodo />
+      {/* @ts-expect-error Server Component */}
       <TodoList />
       </div>
     
